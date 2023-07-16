@@ -39,3 +39,15 @@ Note: This access token key can also be found in middlewares/auth.js in the sour
 
 7. Hit the Send button.
 
+## Screenshots
+
+Intersection_api with response
+![Intersection_api with response](https://github.com/Shubhrav139/Assignment_MapUp/assets/101937849/a515337e-b202-4867-a3df-daa23a616b8f)
+
+Points of Intersection Output
+![Points of Intersection Output](https://github.com/Shubhrav139/Assignment_MapUp/assets/101937849/93e16508-35e6-4047-84cb-e3087806fe5c)
+
+All features together
+![All features ](https://github.com/Shubhrav139/Assignment_MapUp/assets/101937849/506f71c0-835f-4d42-aa83-dea396522474)
+
+
