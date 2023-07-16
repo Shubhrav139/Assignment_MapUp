@@ -10,14 +10,15 @@ Intersections API
 
 - The API returns two objects :
 1. pointsOfIntersection - if points are found then this will contain the featureCollection with all points of intersection as individual features otherwise  it will be an empty array.
-2. allFeatures - this object contains long_line, scattered lines as well as points of intersection, copy the whole object and check it on geojson.io for visualization of lines and points.
+2. allFeatures - this object contains long_line, scattered lines as well as points of intersection, copy the whole object and check it on [geojson.io](http://geojson.io/) for visualization of lines and points.
 
+- During visualization, black lines represent Scattered Lines & red line represents the long line.
 
 Test API using Postman
 
-1. At first clone the source code and run it using the command - node app.js
+1. Service is deployed at render.
 
-2. Open a tab in Postman, send a POST request with the URL - http://localhost:9000/api/intersection
+2. Open a tab in Postman, and send a POST request with the URL - https://intersection-api-jaxh.onrender.com/api/intersection.
 
 3. Then go to headers and add a new Key - Authorization, and enter its value "f0ce43ead3d2db62e4f10ff2daf08665bc25ae504e1775"
 Note: This access token key can also be found in middlewares/auth.js in the source code. (Hard-coded access tokens are not recommended)
