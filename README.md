@@ -1,4 +1,4 @@
-Intersections API
+## Intersections API
 
 - POST request API protected with a header based auth check.
 
@@ -14,7 +14,7 @@ Intersections API
 
 - During visualization, black lines represent Scattered Lines & red line represents the long line.
 
-Test API using Postman
+## Test API using Postman
 
 1. Service is deployed at render.
 
