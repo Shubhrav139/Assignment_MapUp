@@ -1,18 +1,18 @@
 // Importing Turf module
 const turf = require('@turf/turf');
 
-// Importing static data for scatterd lines
+// Importing static data for scattered lines
 const scatteredLines = require('../scatteredLines.json');
 
-// Service which returns points of intersections 
+// Service which returns points of intersection 
 async function intersection(long_line) {
     try {
-        // Object which will contain scattered lines, long line and point of intersection
+        // Object which will contain scattered lines, long line and points of intersection
         let allFeatures = {
             type: "FeatureCollection",
             features: [],
         };
-        // Object which will contain point of intersection
+        // Object which will contain points of intersection
         let intersectionPoints = {
             type: "FeatureCollection",
             features: [],
@@ -24,7 +24,7 @@ async function intersection(long_line) {
         // Long line data pushed in allFeatures features array
         allFeatures.features.push(long_line);
 
-        // Mapping scattered lines data and converting data to GeoJSON
+        // Mapping scattered lines data and converting it to GeoJSON
         scatteredLines.data.map((line) => {
             let lineString = turf.lineString([...line.line.coordinates]);
             allFeatures.features.push(lineString);
